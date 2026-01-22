@@ -1,0 +1,191 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/school/> .
+
+#################################################################
+# 1. 학교 조직도 (담임교사 실명 및 학급 매핑)
+#################################################################
+
+# --- 1학년 (월수금 4교시 / 화목 5교시 종료) ---
+ex:Class_1_1 a ex:Class ; ex:name "1-1" ; ex:grade 1 ; ex:hasHomeroom ex:T_LeeMiRim .
+ex:T_LeeMiRim a ex:HomeroomTeacher ; ex:name "이미림" .
+
+ex:Class_1_2 a ex:Class ; ex:name "1-2" ; ex:grade 1 ; ex:hasHomeroom ex:T_KimMyeongSuk .
+ex:T_KimMyeongSuk a ex:HomeroomTeacher ; ex:name "김명숙" .
+
+ex:Class_1_3 a ex:Class ; ex:name "1-3" ; ex:grade 1 ; ex:hasHomeroom ex:T_KimNamIn .
+ex:T_KimNamIn a ex:HomeroomTeacher ; ex:name "김남인" .
+
+ex:Class_1_4 a ex:Class ; ex:name "1-4" ; ex:grade 1 ; ex:hasHomeroom ex:T_KimMiJeong .
+ex:T_KimMiJeong a ex:HomeroomTeacher ; ex:name "김미정" .
+
+ex:Class_1_5 a ex:Class ; ex:name "1-5" ; ex:grade 1 ; ex:hasHomeroom ex:T_JeonSoYoung .
+ex:T_JeonSoYoung a ex:HomeroomTeacher ; ex:name "전소영" .
+
+# --- 2학년 (월수금 4교시 / 화목 5교시 종료) ---
+ex:Class_2_1 a ex:Class ; ex:name "2-1" ; ex:grade 2 ; ex:hasHomeroom ex:T_YuHwaYoung .
+ex:T_YuHwaYoung a ex:HomeroomTeacher ; ex:name "유화영" .
+
+ex:Class_2_2 a ex:Class ; ex:name "2-2" ; ex:grade 2 ; ex:hasHomeroom ex:T_KangJinYoung .
+ex:T_KangJinYoung a ex:HomeroomTeacher ; ex:name "강진영" .
+
+ex:Class_2_3 a ex:Class ; ex:name "2-3" ; ex:grade 2 ; ex:hasHomeroom ex:T_SeoHyunJin .
+ex:T_SeoHyunJin a ex:HomeroomTeacher ; ex:name "서현진" .
+
+ex:Class_2_4 a ex:Class ; ex:name "2-4" ; ex:grade 2 ; ex:hasHomeroom ex:T_JeongSeonJu .
+ex:T_JeongSeonJu a ex:HomeroomTeacher ; ex:name "정선주" .
+
+# --- 3학년 (월수금 5교시 / 화목 6교시 종료) ---
+ex:Class_3_1 a ex:Class ; ex:name "3-1" ; ex:grade 3 ; ex:hasHomeroom ex:T_ParkInCheol .
+ex:T_ParkInCheol a ex:HomeroomTeacher ; ex:name "박인철" .
+
+ex:Class_3_2 a ex:Class ; ex:name "3-2" ; ex:grade 3 ; ex:hasHomeroom ex:T_LeeYoungHwa .
+ex:T_LeeYoungHwa a ex:HomeroomTeacher ; ex:name "이영화" .
+
+ex:Class_3_3 a ex:Class ; ex:name "3-3" ; ex:grade 3 ; ex:hasHomeroom ex:T_LeeYoungSun .
+ex:T_LeeYoungSun a ex:HomeroomTeacher ; ex:name "이영순" .
+
+ex:Class_3_4 a ex:Class ; ex:name "3-4" ; ex:grade 3 ; ex:hasHomeroom ex:T_LeeJinWon .
+ex:T_LeeJinWon a ex:HomeroomTeacher ; ex:name "이진원" .
+
+ex:Class_3_5 a ex:Class ; ex:name "3-5" ; ex:grade 3 ; ex:hasHomeroom ex:T_NamJeongSuk .
+ex:T_NamJeongSuk a ex:HomeroomTeacher ; ex:name "남정숙" .
+
+# --- 4학년 (월수금 5교시 / 화목 6교시 종료) ---
+ex:Class_4_1 a ex:Class ; ex:name "4-1" ; ex:grade 4 ; ex:hasHomeroom ex:T_KimEunYoung .
+ex:T_KimEunYoung a ex:HomeroomTeacher ; ex:name "김은영" .
+
+ex:Class_4_2 a ex:Class ; ex:name "4-2" ; ex:grade 4 ; ex:hasHomeroom ex:T_JoMinHee .
+ex:T_JoMinHee a ex:HomeroomTeacher ; ex:name "조민희" .
+
+ex:Class_4_3 a ex:Class ; ex:name "4-3" ; ex:grade 4 ; ex:hasHomeroom ex:T_KimMinJeong .
+ex:T_KimMinJeong a ex:HomeroomTeacher ; ex:name "김민정" .
+
+ex:Class_4_4 a ex:Class ; ex:name "4-4" ; ex:grade 4 ; ex:hasHomeroom ex:T_RyuJangMin .
+ex:T_RyuJangMin a ex:HomeroomTeacher ; ex:name "류장민" .
+
+ex:Class_4_5 a ex:Class ; ex:name "4-5" ; ex:grade 4 ; ex:hasHomeroom ex:T_ChoiGyeJeong .
+ex:T_ChoiGyeJeong a ex:HomeroomTeacher ; ex:name "최계정" .
+
+ex:Class_4_6 a ex:Class ; ex:name "4-6" ; ex:grade 4 ; ex:hasHomeroom ex:T_SonMinHo .
+ex:T_SonMinHo a ex:HomeroomTeacher ; ex:name "손민호" .
+
+# --- 5학년 (월화목 6교시 / 수금 5교시 종료) ---
+ex:Class_5_1 a ex:Class ; ex:name "5-1" ; ex:grade 5 ; ex:hasHomeroom ex:T_ImHeeSeon .
+ex:T_ImHeeSeon a ex:HomeroomTeacher ; ex:name "임희선" .
+
+ex:Class_5_2 a ex:Class ; ex:name "5-2" ; ex:grade 5 ; ex:hasHomeroom ex:T_JeongEunJeong .
+ex:T_JeongEunJeong a ex:HomeroomTeacher ; ex:name "정은정" .
+
+ex:Class_5_3 a ex:Class ; ex:name "5-3" ; ex:grade 5 ; ex:hasHomeroom ex:T_ChoiHeeJu .
+ex:T_ChoiHeeJu a ex:HomeroomTeacher ; ex:name "최희주" .
+
+ex:Class_5_4 a ex:Class ; ex:name "5-4" ; ex:grade 5 ; ex:hasHomeroom ex:T_LeeYoungJin .
+ex:T_LeeYoungJin a ex:HomeroomTeacher ; ex:name "이영진" .
+
+ex:Class_5_5 a ex:Class ; ex:name "5-5" ; ex:grade 5 ; ex:hasHomeroom ex:T_ParkYoungSu .
+ex:T_ParkYoungSu a ex:HomeroomTeacher ; ex:name "박영수" .
+
+# --- 6학년 (월화목 6교시 / 수금 5교시 종료) ---
+ex:Class_6_1 a ex:Class ; ex:name "6-1" ; ex:grade 6 ; ex:hasHomeroom ex:T_KimNamI .
+ex:T_KimNamI a ex:HomeroomTeacher ; ex:name "김남이" .
+
+ex:Class_6_2 a ex:Class ; ex:name "6-2" ; ex:grade 6 ; ex:hasHomeroom ex:T_YeoHwaJin .
+ex:T_YeoHwaJin a ex:HomeroomTeacher ; ex:name "여화진" .
+
+ex:Class_6_3 a ex:Class ; ex:name "6-3" ; ex:grade 6 ; ex:hasHomeroom ex:T_HwangHaeNa .
+ex:T_HwangHaeNa a ex:HomeroomTeacher ; ex:name "황해나" .
+
+ex:Class_6_4 a ex:Class ; ex:name "6-4" ; ex:grade 6 ; ex:hasHomeroom ex:T_KimDaSom .
+ex:T_KimDaSom a ex:HomeroomTeacher ; ex:name "김다솜" .
+
+ex:Class_6_5 a ex:Class ; ex:name "6-5" ; ex:grade 6 ; ex:hasHomeroom ex:T_ParkEunJin .
+ex:T_ParkEunJin a ex:HomeroomTeacher ; ex:name "박은진" .
+
+ex:Class_6_6 a ex:Class ; ex:name "6-6" ; ex:grade 6 ; ex:hasHomeroom ex:T_KangSeongHee .
+ex:T_KangSeongHee a ex:HomeroomTeacher ; ex:name "강성희" .
+
+
+#################################################################
+# 2. 학년별 시수 및 점심시간 규칙 (Rules)
+#################################################################
+
+# [규칙 A] 주당 시수 (이 시간이 지나면 수업 종료 -> 보강 가능)
+# 1~2학년
+ex:Grade1 ex:endsAt_Mon 4 ; ex:endsAt_Tue 5 ; ex:endsAt_Wed 4 ; ex:endsAt_Thu 5 ; ex:endsAt_Fri 4 .
+ex:Grade2 ex:endsAt_Mon 4 ; ex:endsAt_Tue 5 ; ex:endsAt_Wed 4 ; ex:endsAt_Thu 5 ; ex:endsAt_Fri 4 .
+
+# 3~4학년
+ex:Grade3 ex:endsAt_Mon 5 ; ex:endsAt_Tue 6 ; ex:endsAt_Wed 5 ; ex:endsAt_Thu 6 ; ex:endsAt_Fri 5 .
+ex:Grade4 ex:endsAt_Mon 5 ; ex:endsAt_Tue 6 ; ex:endsAt_Wed 5 ; ex:endsAt_Thu 6 ; ex:endsAt_Fri 5 .
+
+# 5~6학년
+ex:Grade5 ex:endsAt_Mon 6 ; ex:endsAt_Tue 6 ; ex:endsAt_Wed 5 ; ex:endsAt_Thu 6 ; ex:endsAt_Fri 5 .
+ex:Grade6 ex:endsAt_Mon 6 ; ex:endsAt_Tue 6 ; ex:endsAt_Wed 5 ; ex:endsAt_Thu 6 ; ex:endsAt_Fri 5 .
+
+# [규칙 B] 점심시간 (보강 불가능 시간대 정의)
+# 1~2학년: 3교시 후
+ex:Grade1 ex:lunchPeriod 3 .
+ex:Grade2 ex:lunchPeriod 3 .
+# 3~4학년: 4교시 후
+ex:Grade3 ex:lunchPeriod 4 .
+ex:Grade4 ex:lunchPeriod 4 .
+# 5~6학년: 5교시 후
+ex:Grade5 ex:lunchPeriod 5 .
+ex:Grade6 ex:lunchPeriod 5 .
+
+
+#################################################################
+# 3. 전담 교사 및 전담 시간표 (Specialist Schedule)
+#################################################################
+# 이 데이터가 있어야 "전담 시간에 담임이 빈다"는 논리가 성립합니다.
+
+# 전담 교사 정의
+ex:T_KimShinHye a ex:Specialist ; ex:name "김신혜" ; ex:subject "과학" . 
+ex:T_JeongJiSu a ex:Specialist ; ex:name "정지수" ; ex:subject "과학/도덕" . 
+ex:T_ParkHanSeok a ex:Specialist ; ex:name "박한석" ; ex:subject "과학/도덕" . 
+ex:T_JeonSeongGon a ex:Specialist ; ex:name "전성곤" ; ex:subject "과학" . 
+ex:T_SongJuYeon a ex:Specialist ; ex:name "송주연" ; ex:subject "영어" . 
+ex:T_JangWonSeok a ex:Specialist ; ex:name "장원석" ; ex:subject "체육" . 
+
+# --- [월요일 전담 배치] ---
+# 1교시
+ex:Sch_Mon_1_4_6 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 1 ; ex:class ex:Class_4_6 ; ex:teacher ex:T_KimShinHye .
+ex:Sch_Mon_1_4_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 1 ; ex:class ex:Class_4_2 ; ex:teacher ex:T_JeongJiSu .
+ex:Sch_Mon_1_5_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 1 ; ex:class ex:Class_5_1 ; ex:teacher ex:T_ParkHanSeok .
+ex:Sch_Mon_1_3_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 1 ; ex:class ex:Class_3_2 ; ex:teacher ex:T_SongJuYeon .
+ex:Sch_Mon_1_6_3 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 1 ; ex:class ex:Class_6_3 ; ex:teacher ex:T_JangWonSeok .
+
+# 2교시
+ex:Sch_Mon_2_4_6 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_4_6 ; ex:teacher ex:T_KimShinHye .
+ex:Sch_Mon_2_4_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_4_2 ; ex:teacher ex:T_JeongJiSu .
+ex:Sch_Mon_2_5_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_5_1 ; ex:teacher ex:T_ParkHanSeok .
+ex:Sch_Mon_2_6_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_6_2 ; ex:teacher ex:T_JeonSeongGon .
+ex:Sch_Mon_2_3_3 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_3_3 ; ex:teacher ex:T_SongJuYeon .
+ex:Sch_Mon_2_6_5 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 2 ; ex:class ex:Class_6_5 ; ex:teacher ex:T_JangWonSeok .
+
+# 3교시
+ex:Sch_Mon_3_4_4 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_4_4 ; ex:teacher ex:T_KimShinHye .
+ex:Sch_Mon_3_4_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_4_1 ; ex:teacher ex:T_JeongJiSu .
+ex:Sch_Mon_3_5_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_5_1 ; ex:teacher ex:T_ParkHanSeok .
+ex:Sch_Mon_3_6_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_6_2 ; ex:teacher ex:T_JeonSeongGon .
+ex:Sch_Mon_3_6_3 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_6_3 ; ex:teacher ex:T_SongJuYeon .
+ex:Sch_Mon_3_6_6 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 3 ; ex:class ex:Class_6_6 ; ex:teacher ex:T_JangWonSeok .
+
+# 4교시
+ex:Sch_Mon_4_4_5 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 4 ; ex:class ex:Class_4_5 ; ex:teacher ex:T_KimShinHye .
+ex:Sch_Mon_4_4_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 4 ; ex:class ex:Class_4_1 ; ex:teacher ex:T_JeongJiSu .
+ex:Sch_Mon_4_5_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 4 ; ex:class ex:Class_5_2 ; ex:teacher ex:T_ParkHanSeok .
+ex:Sch_Mon_4_6_2 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 4 ; ex:class ex:Class_6_2 ; ex:teacher ex:T_SongJuYeon .
+ex:Sch_Mon_4_6_1 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 4 ; ex:class ex:Class_6_1 ; ex:teacher ex:T_JangWonSeok .
+
+# 5교시 (전담만 입력, 1~2학년은 자동 방과후 처리됨)
+ex:Sch_Mon_5_6_4 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 5 ; ex:class ex:Class_6_4 ; ex:teacher ex:T_SongJuYeon .
+ex:Sch_Mon_5_6_3 a ex:SpecialistClass ; ex:day "Mon" ; ex:period 5 ; ex:class ex:Class_6_3 ; ex:teacher ex:T_JeonSeongGon .
+
+# --- [화요일 전담 배치 (Sample)] ---
+ex:Sch_Tue_1_4_3 a ex:SpecialistClass ; ex:day "Tue" ; ex:period 1 ; ex:class ex:Class_4_3 ; ex:teacher ex:T_KimShinHye .
+ex:Sch_Tue_3_6_6 a ex:SpecialistClass ; ex:day "Tue" ; ex:period 3 ; ex:class ex:Class_6_6 ; ex:teacher ex:T_SongJuYeon .
+
+# (필요시 수, 목, 금 데이터도 이 형식으로 추가하면 시스템이 인식함)
